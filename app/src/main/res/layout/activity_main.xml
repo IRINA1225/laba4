@@ -4,117 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00BCD4"
-    android:backgroundTint="#FFFFFF"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="415dp"
-        android:layout_height="141dp"
-        android:backgroundTint="#FFFFFF"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="-5dp"
-        tools:layout_editor_absoluteY="160dp">
-
-        <EditText
-            android:id="@+id/number1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#DCDCDC"
-            android:inputType="numberSigned"
-            android:textSize="30sp" />
-
-        <EditText
-            android:id="@+id/opertion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#FFFFFF"
-            android:inputType="numberSigned"
-            android:textSize="30sp" />
-
-        <EditText
-            android:id="@+id/number2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#DBDBDB"
-            android:inputType="numberSigned"
-            android:textSize="30sp" />
-
-        <TextView
-            android:id="@+id/equal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#FFFFFF"
-            android:inputType="numberSigned"
-            android:text="="
-            android:textSize="30sp" />
-
-        <TextView
-            android:id="@+id/result"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#FFFFFF"
-            android:inputType="numberSigned"
-            android:textSize="30sp" />
-    </LinearLayout>
-
-    <androidx.gridlayout.widget.GridLayout
-        android:layout_width="409dp"
-        android:layout_height="428dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="301dp">
-
-        <Button
-            android:id="@+id/buttonAdd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#00BBD3"
-            android:text="+"
-            app:layout_column="0"
-            app:layout_row="1" />
-
-        <Button
-            android:id="@+id/buttonClean"
-            android:layout_width="55dp"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#00BCD4"
-            android:text="C"
-            app:layout_column="4"
-            app:layout_row="1" />
-
-        <Button
-            android:id="@+id/buttonSubtract"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#00BBD3"
-            android:text="-"
-            app:layout_column="1"
-            app:layout_row="1" />
-
-        <Button
-            android:id="@+id/buttonDivide"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#00BBD3"
-            android:text="/"
-            app:layout_column="2"
-            app:layout_row="1" />
-
-        <Button
-            android:id="@+id/buttonMultiply"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#00BBD3"
-            android:text="*"
-            app:layout_column="3"
-            app:layout_row="1" />
-
-    </androidx.gridlayout.widget.GridLayout>
-
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCloseButtonClick"
+        android:text="Выход"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
